@@ -1,5 +1,6 @@
 .bg-image {
   background-image: url("https://community.wolfram.com/c/portal/getImageAttachment?filename=hopf14.gif&userId=610054");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
