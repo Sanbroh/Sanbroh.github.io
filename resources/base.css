@@ -37,7 +37,7 @@
   position: fixed;
   height: 100%;
   width: 6vw;
-  overflow: auto;
+  overflow: hidden;
   display: grid;
 
   z-index: 99;
@@ -52,6 +52,15 @@
 .topnav:hover {
   background-color: #D62828;
   transition: 1s;
+}
+
+.projects {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -1;
 }
 
 .footer {
@@ -110,4 +119,16 @@
 
   z-index: 99; /* Make sure it does not overlap */
   color: #FCBF49; /* Set a background color */
+}
+
+#bg-title {
+  z-index: -1;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 5vw;
+  font-weight: bold;
+
+  color: #D62828;
+  cursor: default;
 }
