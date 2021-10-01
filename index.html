@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Coffii | Comfort of your home, bustle of the world.</title>
+<title>Kevin Liang</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="resources/style.css" type="text/css" rel="stylesheet" />
 <link href="resources/base.css" type="text/css" rel="stylesheet" />
 <link href="resources/home.css" type="text/css" rel="stylesheet" />
-<script src="resources/script.js"></script>
+<script src="js/script.js"></script>
 </head>
 
 <body>
@@ -15,41 +16,28 @@
     <!-- Header -->
 
     <header>
-      <div class="topnav">
-        <img src="images/logo.png"/>
-        <a class="active" href="index.html" id="topnav-home-btn">Home</a>
-        <a href="map.html">Map</a>
-        <a href="room.html" id="topnav-room">Congee Queen (CHATTING)</a>
-        <a id="topnav-exit" onclick="exitRoom()"><i class="fa fa-times" aria-hidden="true"></i></a>
-        <i class="fa fa-circle" aria-hidden="true" id="topnav-status-dot"></i>
-
-        <div class="profile">
-          <a href="about.html" id="topnav-about"><i class="fa fa-question" aria-hidden="true"></i></a>
-          <a id="topnav-logoff" onclick="logOff()"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
-          <a id="topnav-profile" href="profile.html"><i class="fa fa-user" aria-hidden="true"></i></a>
-        </div>
+      <div class="topnav fixed">
+        <i id="navmenu" class="material-icons">menu</i>
       </div>
-
-      <div class="topnav-edge"></div>
     </header>
 
     <!-- Front Page -->
 
     <div class="main">
-
+      <div class="intro">
+        <h1>Hello, my name is <a class="emphasis">Kevin Liang.</a></h1>
+        <h1>
+          <a class="typewrite" data-period="2000" data-type='[ "I love Coding.", "I love Designing.", "I Love Learning.", "I Love Innovating.", "I Love Everything." ]'>
+            <span class="wrap"></span>
+          </a>
+        </h1>
+      </div>
     </div>
 
     <div class="footer">
-      <p>Kevin Liang 2021</p>
-    </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+    </div>
 
 </body>
 
 </html>
-
-<script>
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
