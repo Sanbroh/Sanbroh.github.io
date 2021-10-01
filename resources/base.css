@@ -18,7 +18,7 @@
   color: #EAE2B7;
   font-size: 1.75vw;
   cursor: default;
-  padding-top: 15%;
+  padding-top: 12.5vw;
 }
 
 .typewrite {
@@ -32,8 +32,8 @@
   padding-top: 3vw;
   padding-left: 3vw;
   position: fixed;
-  height: 100%;
-  width: 7%;
+  height: 100vw;
+  width: 7vw;
   overflow: auto;
 
   background-color: none;
