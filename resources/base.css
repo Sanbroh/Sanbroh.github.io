@@ -1,5 +1,5 @@
 #navmenu {
-  font-size: 300%;
+  font-size: 4vw;
   color: #FCBF49;
   transition: 1s;
 }
@@ -16,22 +16,21 @@
 
 .intro {
   color: #EAE2B7;
-  font-size: 150%;
+  font-size: 1.75vw;
   cursor: default;
   padding-top: 15%;
 }
 
 .typewrite {
   color: #EAE2B7;
-  font-size: 100%;
 }
 
 .topnav {
   margin: 0;
   left: 0;
   top: 0;
-  padding-top: 3%;
-  padding-left: 3%;
+  padding-top: 3vw;
+  padding-left: 3vw;
   position: fixed;
   height: 100%;
   width: 7%;
