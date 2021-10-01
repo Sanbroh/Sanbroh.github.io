@@ -19,3 +19,33 @@
     display: block;
   }
 }
+
+.fade-in-fast {
+  animation: fadeIn Linear 1s;
+}
+
+.fade-in-med {
+  animation: fadeIn Linear 2s;
+}
+
+.fade-in-slow {
+  animation: fadeIn Linear 3s;
+}
+
+.delay-short {
+  animation-delay: 1s;
+}
+
+.delay-med {
+  animation-delay: 2s;
+}
+
+.delay-long {
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0; transform: translate(0,  -20px);}
+  65% {transform: translate(0,  0);}
+  100% {opacity:1;}
+}
