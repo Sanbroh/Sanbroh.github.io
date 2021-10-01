@@ -1,17 +1,12 @@
-#navmenu {
-  font-size: 4vw;
-  color: #FCBF49;
-  transition: 1s;
-}
+.bg-image {
+  background-image: url("https://community.wolfram.com/c/portal/getImageAttachment?filename=hopf14.gif&userId=610054");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-#navmenu:hover {
-  cursor: pointer;
-  color: #EAE287;
-  transition: 1s;
-}
+  filter: blur(4px);
 
-.main {
-  margin-left: 12vw;
+  height: 100vh;
 }
 
 .intro {
@@ -19,6 +14,16 @@
   font-size: 1.75vw;
   cursor: default;
   padding-top: 12.5vw;
+  margin-left: 12vw;
+
+  position: absolute;
+  top: 0;
+
+  z-index: 2;
+}
+
+.pop-up {
+  text-decoration: none;
 }
 
 .typewrite {
@@ -29,12 +34,16 @@
   margin: 0;
   left: 0;
   top: 0;
-  padding-top: 3vw;
-  padding-left: 3vw;
   position: fixed;
-  height: 200vw;
-  width: 7vw;
+  height: 100%;
+  width: 6vw;
   overflow: auto;
+  display: grid;
+
+  z-index: 99;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   background-color: none;
   transition: 1s;
@@ -47,4 +56,58 @@
 
 .footer {
   height: 2000px;
+}
+
+#navmenu, #to-contact {
+  color: #FCBF49;
+  transition: 1s;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+#navmenu:hover, #to-contact:hover, #to-top:hover {
+  color: #EAE287;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#navmenu {
+  margin-top: 6vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+#navtext {
+  color: #EAE287;
+  font-size: 1.5vw;
+  cursor: default;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  position: absolute;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  margin: auto;
+}
+
+#to-contact {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 6vh;
+}
+
+#to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  font-size: 2rem;
+  bottom: 6vh;
+  right: 3vw;
+  transition: 1s;
+
+  margin: auto;
+
+  z-index: 99; /* Make sure it does not overlap */
+  color: #FCBF49; /* Set a background color */
 }

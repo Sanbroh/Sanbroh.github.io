@@ -7,6 +7,7 @@
 <link href="resources/style.css" type="text/css" rel="stylesheet" />
 <link href="resources/base.css" type="text/css" rel="stylesheet" />
 <link href="resources/home.css" type="text/css" rel="stylesheet" />
+<!-- <script src="path/to/dist/feather.js"></script> -->
 <script src="js/script.js"></script>
 </head>
 
@@ -17,26 +18,34 @@
 
     <header>
       <div class="topnav fixed">
-        <i id="navmenu" class="material-icons">menu</i>
+        <i id="navmenu" class="material-icons lighter">menu</i>
+        <h1 id="navtext" class="lighter">Welcome</h1>
+        <i id="to-contact" class="material-icons lighter">mail_outline</i>
       </div>
     </header>
 
     <!-- Front Page -->
 
     <div class="main">
+      <div class="bg-image"></div>
       <div class="intro">
-        <h1>Hello, my name is <a class="emphasis">Kevin Liang.</a></h1>
+        <h1>Hello, my name is <a class="emphasis floating" href="#">Kevin Liang.</a></h1>
         <h1>
           <a class="typewrite" data-period="2000" data-type='[ "I love Coding.", "I love Designing.", "I love Learning.", "I love Innovating.", "I love Everything." ]'>
             <span class="wrap"></span>
           </a>
         </h1>
       </div>
+      <div class="projects">
+        <h2>My Projects</h2>
+      </div>
     </div>
 
     <div class="footer">
 
     </div>
+
+    <a onclick="topFunction()" id="to-top" class="material-icons lighter">vertical_align_top</a>
 
 </body>
 
