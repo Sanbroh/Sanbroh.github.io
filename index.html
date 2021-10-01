@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coffii | Comfort of your home, bustle of the world.</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="resources/style.css" type="text/css" rel="stylesheet" />
+<link href="resources/base.css" type="text/css" rel="stylesheet" />
+<link href="resources/home.css" type="text/css" rel="stylesheet" />
+<script src="resources/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+
+    <header>
+      <div class="topnav">
+        <img src="images/logo.png"/>
+        <a class="active" href="index.html" id="topnav-home-btn">Home</a>
+        <a href="map.html">Map</a>
+        <a href="room.html" id="topnav-room">Congee Queen (CHATTING)</a>
+        <a id="topnav-exit" onclick="exitRoom()"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <i class="fa fa-circle" aria-hidden="true" id="topnav-status-dot"></i>
+
+        <div class="profile">
+          <a href="about.html" id="topnav-about"><i class="fa fa-question" aria-hidden="true"></i></a>
+          <a id="topnav-logoff" onclick="logOff()"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+          <a id="topnav-profile" href="profile.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="topnav-edge"></div>
+    </header>
+
+    <!-- Front Page -->
+
+    <div class="main">
+      <div class="front-intro" style="margin-top: 0px;background-image: url('images/front-intro-alt.png');">
+        <div class="front-menu">
+          <div class="tab">
+            <button id="defaultOpen" class="tablinks active" onclick="openTab(event, 'tab1')">Nomads</button>
+            <button class="tablinks active" onclick="openTab(event, 'tab2')">Taverns</button>
+            <button class="tablinks active" onclick="openTab(event, 'tab3')">Guilds</button>
+          </div>
+
+          <div id="tab1" class="tabcontent">
+            <h2>Your favourite places to work from - Right at your fingertips.</h2>
+            <p>Coffee chat with your friends and co-workers - anywhere and from your home. Choose from one of our two plans and connect with the entire world.</p>
+            <h4>Nomad+ starts at $9.99/month or $99.99/year.</h4>
+            <ul>
+              <li>5% OFF menu items.</li>
+              <li>Ability to create private rooms.</li>
+              <li>Access to premium room themes.</li>
+              <li>Visit stores across the world.</li>
+            </ul>
+            <a class="tab-btn" id="nomad-f">BECOME A NOMAD</a>
+            <a class="tab-btn" id="nomad-p">EXPLORE NOMAD+</a>
+          </div>
+
+          <div id="tab2" class="tabcontent">
+            <h2>Want your cafe or shop to be just a touch away?</h2>
+            <p>Create and customize your virtual shop to your heart's desire, allow others to visit from across the oceans.</p>
+            <h4>Tavern starts at $19.99/month or $199.99/year.</h4>
+            <ul>
+              <li>Access to exclusive room themes.</li>
+              <li>Analyze your virtual store's online traffic.</li>
+              <li>Customize your virtual store to your liking.</li>
+              <li>Boost SEO and drive global awareness.</li>
+            </ul>
+            <a class="tab-btn" id="tavern">START YOUR TAVERN</a>
+          </div>
+
+          <div id="tab3" class="tabcontent">
+            <h2>Take your company to another world with a simple click.</h2>
+            <p>Have meetings and conferences in your very own virtual space, from anywhere and everywhere. Enhance your employees' online productivity.</p>
+            <h4>Contact us today for a quick demo.</h4>
+            <ul>
+              <li>Access to all room themes.</li>
+              <li>Use the largest rooms available.</li>
+              <li>Gain insights on your employees.</li>
+              <li>Let your company go global!</li>
+            </ul>
+            <a class="tab-btn" id="guild">REQUEST A DEMO</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="front-content1" style="margin-top: 0px;background-image: url('images/front-content1.png');">
+        <h1>Suggested For You</h1>
+        <div class="container1 inline-block containers">
+          <img class="content-image" src="images/starbucks.png">
+          <h3>Starbucks Coffee (4 Win Street)</h3>
+          <h5>• 10% OFF today only!</h5>
+        </div>
+        <div class="container2 inline-block containers">
+          <img class="content-image" src="images/cafe1.png">
+          <h3>Smith's Cafe (1 Hackers Avenue)</h3>
+          <h5>• 5% OFF for all online orders!</h5>
+        </div>
+        <div class="container3 inline-block containers">
+          <img class="content-image" src="images/cafe2.png">
+          <h3>Kevin's Tea Shop (62 Main Street)</h3>
+          <h5>• Many [Web Developers] like you work here!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Coffii 2021 for QHACKS usage only.</p>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+
+</body>
+
+</html>
+
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>

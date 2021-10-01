@@ -1,0 +1,260 @@
+* {box-sizing: border-box;}
+
+header {
+  font-weight: bold;
+}
+
+body {
+  background-color: #f5eff4;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav-edge {
+  height: 8px;
+  background-color: #bebaa2;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f4f0e4;
+  padding: 4px 24px;
+  margin-bottom: 0;
+}
+
+.topnav img {
+  float: left;
+  display: block;
+  width: auto;
+
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 24px;
+
+  height: 36px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 12px 4px;
+
+  background-color: #d6cfaa;
+  border-radius: 8px;
+
+  border-bottom-width: 4px;
+  border-bottom-color: #bebaa2;
+  border-bottom-style: solid;
+}
+
+.topnav a:hover {
+  background-color: #ceb55a;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  margin: 12px 4px;
+  display: block;
+  text-align: center;
+  float: left;
+
+  border-bottom-style: none;
+  margin-top: 16px;
+}
+
+.topnav a.active {
+  background-color: #ceb55a;
+  color: #fff;
+  border-radius: 8px;
+  margin: 12px 4px;
+
+  border-bottom-style: none;
+  margin-top: 16px;
+}
+
+.topnav .profile a, .topnav .profile button {
+  float: right;
+  display: block;
+  color: #d6cfaa;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 12px 4px;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.footer {
+  background-color: #f4f0e4;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  border-bottom-width: 8px;
+  border-bottom-color: #bebaa2;
+  border-bottom-style: solid;
+}
+
+#topnav-room {
+  float: left;
+  display: block;
+  background: #ffffff;
+  color: #d6cfaa;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 12px 4px;
+  border-radius: 8px;
+  border: none;
+
+  width: 18rem;
+
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  border-bottom-width: 4px;
+  border-bottom-color: #bebaa2;
+  border-bottom-style: solid;
+}
+
+#topnav-exit {
+  float: left;
+  display: block;
+
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+
+  color: #d6cfaa;
+
+  margin-left: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 1px;
+
+  background: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 22px;
+  left: 61.25%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  border-bottom-width: 4px;
+  border-bottom-color: #bebaa2;
+  border-bottom-style: solid;
+}
+
+#topnav-status-dot {
+  float: left;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+
+  text-align: center;
+  color: red;
+  font-size: 12px;
+
+  margin-left: 1px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+  position: absolute;
+  top: 22px;
+  left: 39.5%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#topnav-exit:hover, #topnav-room:hover {
+  border-bottom-style: none;
+  margin-top: 16px;
+}
+
+#topnav-about, #topnav-profile, #topnav-logoff {
+  background-color: #d6cfaa;
+  color: #fff;
+  border-radius: 64px;
+  cursor: pointer;
+
+  margin-left: 6px;
+  margin-right: 6px;
+
+  border-bottom-style: solid;
+}
+
+#topnav-about:hover, #topnav-profile:hover, #topnav-logoff:hover {
+  border-bottom-style: none;
+  margin-top: 16px;
+  background-color: #ceb55a;
+}
+
+#topnav-about.active, #topnav-profile.active, #topnav-logoff.active {
+  background-color: #ceb55a;
+  color: #fff;
+  border-radius: 64px;
+
+  border-bottom-style: none;
+  margin-top: 16px;
+}
+
+#topnav-about {
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+  padding-right: 16px;
+
+  margin-right: 0px;
+}
+
+#topnav-profile {
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+#topnav-logoff {
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 13px;
+  padding-right: 11px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  margin-left: 20px;
+  text-align: center;
+  background-color: #d6cfaa; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 14px 15px; /* Some padding */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #ceb55a; /* Add a dark-grey background on hover */
+}
