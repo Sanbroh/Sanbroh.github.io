@@ -1,11 +1,16 @@
+.image-wrapper {
+  overflow: hidden;
+}
+
 .bg-image {
   background-image: url("https://community.wolfram.com/c/portal/getImageAttachment?filename=hopf14.gif&userId=610054");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: -1vw;
 
-  filter: blur(4px);
+  filter: blur(5px);
 
   height: 100vh;
 }
