@@ -8,11 +8,13 @@ function scrollFunction() {
     document.getElementById("to-top").style.display = "none";
   }
 
+  navtext = document.getElementById("navtext");
+
   if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-    document.getElementById("navtext").innerHTML = "Projects";
+    navtext.innerHTML = "Projects";
     document.getElementById("bg-title").innerHTML = "Projects";
   } else {
-    document.getElementById("navtext").innerHTML = "Welcome";
+    navtext.innerHTML = "Welcome";
     document.getElementById("bg-title").innerHTML = "Welcome";
   }
 }
