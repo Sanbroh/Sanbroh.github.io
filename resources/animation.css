@@ -44,8 +44,22 @@
   animation-delay: 3s;
 }
 
+.info-fade {
+  animation: infoFadeIn linear 0.5s;
+}
+
 @keyframes fadeIn {
   0% {opacity:0; transform: translate(0,  -20px);}
   65% {transform: translate(0,  0);}
   100% {opacity:1;}
+}
+
+@keyframes infoFadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 0.7;}
+}
+
+@keyframes infoFadeOut {
+  0% {opacity: 0.7;}
+  100% {opacity: 0;}
 }

@@ -15,6 +15,62 @@
   height: 100vh;
 }
 
+.infomenu {
+  z-index: 100;
+  position: fixed;
+  margin: 0;
+
+  display: none;
+
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.info-background {
+  background-color: black;
+  background-size: cover;
+
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.7;
+}
+
+.info-text {
+  position: fixed;
+
+  top: 20vh;
+  right: 5vw;
+}
+
+.info-text h2 {
+  line-height: 7vh;
+  text-align: right;
+}
+
+.info-text h2 a {
+  color: white;
+  font-size: 5vw;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: none;
+
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-right: 2vw;
+
+  transition: 1s;
+}
+
+.info-text h2 a:hover {
+  background-color: white;
+  color: black;
+
+  transition: 1s;
+}
+
 .intro {
   color: #EAE2B7;
   font-size: 1.75vw;
@@ -73,6 +129,23 @@
   height: 2000px;
 }
 
+#infoexit {
+  position: fixed;
+  top: 6vh;
+  right: 6vh;
+  color: white;
+
+  cursor: pointer;
+  font-size: 2rem;
+
+  transition: 1s;
+}
+
+#infoexit:hover {
+  color: lightgray;
+  transition: 1s;
+}
+
 #navmenu, #to-contact {
   color: #FCBF49;
   transition: 1s;
@@ -99,11 +172,10 @@
   cursor: default;
   writing-mode: vertical-rl;
   text-orientation: sideways-right;
-  position: absolute;
   letter-spacing: 3px;
   text-transform: uppercase;
 
-  margin: auto auto;
+  margin: auto;
 }
 
 #to-contact {

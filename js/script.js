@@ -24,3 +24,15 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+function toggleMenuOn() {
+  document.getElementById("infomenu").style.display = "block";
+}
+
+function toggleMenuOff() {
+  document.getElementById("infomenu").style.animation = "infoFadeOut linear 0.5s";
+  setTimeout(function() {
+    document.getElementById("infomenu").style.display = "none";
+    document.getElementById("infomenu").style.animation = "none";
+  }, 500);
+}
