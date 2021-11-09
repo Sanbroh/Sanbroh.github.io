@@ -6,7 +6,6 @@ html {
 
 .main {
   padding: 0.75vw;
-  background-color: #003049;
   margin: 0;
 }
 
@@ -56,4 +55,16 @@ html {
 
 .lighter {
   font-weight: lighter;
+}
+
+.right {
+  margin-left: auto !important;
+}
+
+.left {
+  margin-right: auto !important;
+}
+
+.white {
+  color: white;
 }
