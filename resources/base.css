@@ -104,6 +104,7 @@
 
 .project-text h3 {
   font-size: 4vh;
+  line-height: 4.25vh;
 }
 
 .project-text h3 .Subtitle {
@@ -193,6 +194,18 @@
   background-image: url("https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/363/577/datas/gallery.jpg");
 }
 
+#project-2 {
+  background-image: url("https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/363/577/datas/gallery.jpg");
+}
+
+#project-3 {
+  background-image: url("https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/363/577/datas/gallery.jpg");
+}
+
+#project-4 {
+  background-image: url("https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/363/577/datas/gallery.jpg");
+}
+
 @media only screen and (max-width: 992px) {
   .topnav {
     margin: 0;
@@ -207,7 +220,7 @@
     z-index: 99;
 
     padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-bottom: 0.25rem;
 
     background-color: none;
     transition: 1s;
@@ -236,8 +249,8 @@
   .project-box {
     margin: 30vh auto;
 
-    height: 100vh;
-    width: 72vh;
+    height: 108vh;
+    width: 60vh;
     opacity: 0.7;
 
     background-color: black;
@@ -288,12 +301,12 @@
 
   #navtext {
     color: #EAE287;
-    font-size: 3vh;
+    font-size: 1rem;
     cursor: default;
     letter-spacing: 3px;
     text-transform: uppercase;
 
-    top: 3vh;
+    top: 3.5vh;
     left: 50%;
     transform: translate(-50%, 0);
 
@@ -394,7 +407,7 @@
 
   #navtext {
     color: #EAE287;
-    font-size: 3vh;
+    font-size: 1.25rem;
     cursor: default;
     writing-mode: vertical-rl;
     text-orientation: sideways-right;
@@ -403,7 +416,7 @@
 
     position: fixed;
     top: 50%;
-    left: 2.4vw;
+    left: 2.15vw;
 
     transform: translate(0, -50%);
   }
