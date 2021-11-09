@@ -4,7 +4,7 @@
     left: 0;
     top: 0;
     position: fixed;
-    height: 16vh;
+    height: 8vh;
     width: 100%;
     overflow: hidden;
     display: grid;
@@ -72,7 +72,7 @@
     color: #FCBF49;
     transition: 1s;
     cursor: pointer;
-    font-size: 8vh;
+    font-size: 4vh;
   }
 
   #navmenu:hover, #to-contact:hover, #to-top:hover {
@@ -82,7 +82,7 @@
   }
 
   #navmenu {
-    top: 4vh;
+    top: 2vh;
     left: 6vw;
 
     position: fixed;
@@ -90,12 +90,12 @@
 
   #navtext {
     color: #EAE287;
-    font-size: 4vh;
+    font-size: 2vh;
     cursor: default;
     letter-spacing: 3px;
     text-transform: uppercase;
 
-    top: 3.5vh;
+    top: 1.75vh;
     left: 50%;
     transform: translate(-50%, 0);
 
@@ -103,7 +103,7 @@
   }
 
   #to-contact {
-    top: 4vh;
+    top: 2vh;
     right: 6vw;
 
     position: fixed;
