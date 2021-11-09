@@ -68,3 +68,9 @@ html {
 .white {
   color: white;
 }
+
+.Subtitle {
+  color: gray;
+  font-weight: normal;
+  font-style: italic;
+}
