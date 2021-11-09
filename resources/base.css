@@ -193,115 +193,7 @@
   background-image: url("https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/363/577/datas/gallery.jpg");
 }
 
-@media only screen and (min-width: 768px) {
-  .topnav {
-    margin: 0;
-    left: 0;
-    top: 0;
-    position: fixed;
-    height: 100%;
-    width: 6vw;
-    overflow: hidden;
-    display: grid;
-
-    z-index: 99;
-
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    background-color: none;
-    transition: 1s;
-  }
-
-  .topnav:hover {
-    background-color: #D62828;
-    transition: 1s;
-  }
-
-  .intro {
-    color: #EAE2B7;
-    font-size: 1.75vw;
-    cursor: default;
-    padding-top: 12.5vw;
-    margin-left: 12vw;
-
-    position: absolute;
-    top: 0;
-
-    z-index: 2;
-  }
-
-  .project-box {
-    margin: 30vh 8vw;
-
-    height: 100vh;
-    width: 80vh;
-    opacity: 0.7;
-
-    background-color: black;
-
-    transition: 1s;
-  }
-
-  .project-box:hover {
-    opacity: 1;
-    width: 90vh;
-    height: 101vh;
-
-    transition: 1s;
-  }
-
-  .project-text {
-    padding: 2vh 2vw;
-    color: white;
-    line-height: 2vh;
-  }
-
-  #navmenu, #to-contact {
-    color: #FCBF49;
-    transition: 1s;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-
-  #navmenu:hover, #to-contact:hover, #to-top:hover {
-    color: #EAE287;
-    transition: 1s;
-    cursor: pointer;
-  }
-
-  #navmenu {
-    margin-top: 6vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-  }
-
-  #navtext {
-    color: #EAE287;
-    font-size: 3vh;
-    cursor: default;
-    writing-mode: vertical-rl;
-    text-orientation: sideways-right;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-
-    position: fixed;
-    top: 50%;
-    left: 2.4vw;
-
-    transform: translate(0, -50%);
-  }
-
-  #to-contact {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: 6vh;
-  }
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .topnav {
     margin: 0;
     left: 0;
@@ -413,5 +305,113 @@
     right: 6vw;
 
     position: fixed;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .topnav {
+    margin: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 6vw;
+    overflow: hidden;
+    display: grid;
+
+    z-index: 99;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    background-color: none;
+    transition: 1s;
+  }
+
+  .topnav:hover {
+    background-color: #D62828;
+    transition: 1s;
+  }
+
+  .intro {
+    color: #EAE2B7;
+    font-size: 1.75vw;
+    cursor: default;
+    padding-top: 12.5vw;
+    margin-left: 12vw;
+
+    position: absolute;
+    top: 0;
+
+    z-index: 2;
+  }
+
+  .project-box {
+    margin: 30vh 8vw;
+
+    height: 100vh;
+    width: 80vh;
+    opacity: 0.7;
+
+    background-color: black;
+
+    transition: 1s;
+  }
+
+  .project-box:hover {
+    opacity: 1;
+    width: 90vh;
+    height: 101vh;
+
+    transition: 1s;
+  }
+
+  .project-text {
+    padding: 2vh 2vw;
+    color: white;
+    line-height: 2vh;
+  }
+
+  #navmenu, #to-contact {
+    color: #FCBF49;
+    transition: 1s;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  #navmenu:hover, #to-contact:hover, #to-top:hover {
+    color: #EAE287;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  #navmenu {
+    margin-top: 6vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+  }
+
+  #navtext {
+    color: #EAE287;
+    font-size: 3vh;
+    cursor: default;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    position: fixed;
+    top: 50%;
+    left: 2.4vw;
+
+    transform: translate(0, -50%);
+  }
+
+  #to-contact {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 6vh;
   }
 }
