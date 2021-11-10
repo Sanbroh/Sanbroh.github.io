@@ -1,4 +1,85 @@
 @media only screen and (max-width: 992px) {
+  .info-nav {
+    position: fixed;
+
+    top: 22vh;
+    left: 5vw;
+
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-left: 4vw;
+
+    border-color: white;
+    border-width: 0.25vw;
+    border-style: solid;
+  }
+
+  .info-nav h3 {
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+
+  .info-nav hr {
+    border-top: 0.25vw solid white;
+    border-bottom: none;
+  }
+
+  .info-nav-item {
+    font-size: 3.5vw;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1vw;
+  }
+
+  .info-nav-item h4 {
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .info-nav-item h4:hover {
+    margin-left: 1vw;
+    transition: 0.5s;
+
+    font-weight: bolder;
+  }
+
+  .info-text {
+    position: fixed;
+
+    top: 20vh;
+    right: 5vw;
+  }
+
+  .info-text h2 {
+    line-height: 4.5vw;
+    text-align: right;
+  }
+
+  .info-text h2 a {
+    color: white;
+    font-size: 6vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: none;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-right: 2vw;
+
+    transition: 1s;
+  }
+
+  .info-text h2 a:hover {
+    background-color: white;
+    color: black;
+
+    transition: 1s;
+  }
+
   .topnav {
     margin: 0;
     left: 0;
@@ -111,6 +192,87 @@
 }
 
 @media only screen and (min-width: 992px) {
+  .info-nav {
+    position: fixed;
+
+    top: 20vh;
+    left: 5vw;
+
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-left: 4vw;
+
+    border-color: white;
+    border-width: 0.25vw;
+    border-style: solid;
+  }
+
+  .info-nav h3 {
+    font-size: 3.5vw;
+    color: white;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+
+  .info-nav hr {
+    border-top: 0.25vw solid white;
+    border-bottom: none;
+  }
+
+  .info-nav-item {
+    font-size: 2.25vw;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1vw;
+  }
+
+  .info-nav-item h4 {
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .info-nav-item h4:hover {
+    margin-left: 1vw;
+    transition: 0.5s;
+
+    font-weight: bolder;
+  }
+
+  .info-text {
+    position: fixed;
+
+    top: 20vh;
+    right: 5vw;
+  }
+
+  .info-text h2 {
+    line-height: 7vh;
+    text-align: right;
+  }
+
+  .info-text h2 a {
+    color: white;
+    font-size: 5vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: none;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-right: 2vw;
+
+    transition: 1s;
+  }
+
+  .info-text h2 a:hover {
+    background-color: white;
+    color: black;
+
+    transition: 1s;
+  }
+
   .topnav {
     margin: 0;
     left: 0;
@@ -259,39 +421,6 @@
   opacity: 0.7;
 }
 
-.info-text {
-  position: fixed;
-
-  top: 20vh;
-  right: 5vw;
-}
-
-.info-text h2 {
-  line-height: 7vh;
-  text-align: right;
-}
-
-.info-text h2 a {
-  color: white;
-  font-size: 5vw;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: none;
-
-  padding-left: 2vw;
-  padding-right: 2vw;
-  margin-right: 2vw;
-
-  transition: 1s;
-}
-
-.info-text h2 a:hover {
-  background-color: white;
-  color: black;
-
-  transition: 1s;
-}
-
 .pop-up {
   text-decoration: none;
 }
@@ -372,11 +501,11 @@
 #infoexit {
   position: fixed;
   top: 6vh;
-  right: 6vh;
+  right: 6vw;
   color: white;
 
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 6vh;
 
   transition: 1s;
 }
