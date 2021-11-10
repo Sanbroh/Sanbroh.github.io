@@ -1,4 +1,4 @@
-@media only screen and (max-width: 992px) {
+@media only screen and (hover: none) {
   .info-nav {
     position: fixed;
 
@@ -199,9 +199,23 @@
     color: #D62828;
     cursor: default;
   }
+
+  #to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    font-size: 4vh;
+    bottom: 2vh;
+    right: 6vw;
+    transition: 1s;
+
+    margin: auto;
+
+    z-index: 99; /* Make sure it does not overlap */
+    color: #FCBF49; /* Set a background color */
+  }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (any-hover: hover) {
   .info-nav {
     position: fixed;
 
@@ -398,6 +412,20 @@
     color: #D62828;
     cursor: default;
   }
+
+  #to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    font-size: 2rem;
+    bottom: 6vh;
+    right: 2rem;
+    transition: 1s;
+
+    margin: auto;
+
+    z-index: 99; /* Make sure it does not overlap */
+    color: #FCBF49; /* Set a background color */
+  }
 }
 
 .image-wrapper {
@@ -533,20 +561,6 @@
 #infoexit:hover {
   color: lightgray;
   transition: 1s;
-}
-
-#to-top {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  font-size: 4vh;
-  bottom: 2vh;
-  right: 6vw;
-  transition: 1s;
-
-  margin: auto;
-
-  z-index: 99; /* Make sure it does not overlap */
-  color: #FCBF49; /* Set a background color */
 }
 
 #project-1 {
