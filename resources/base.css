@@ -538,9 +538,9 @@
 #to-top {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  font-size: 2rem;
-  bottom: 6vh;
-  right: 3vw;
+  font-size: 4vh;
+  bottom: 2vh;
+  right: 6vw;
   transition: 1s;
 
   margin: auto;
