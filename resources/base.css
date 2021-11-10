@@ -15,7 +15,7 @@
   }
 
   .info-nav h3 {
-    font-size: 5vw;
+    font-size: 4vw;
     color: white;
     text-align: center;
     margin-bottom: 2vw;
@@ -27,11 +27,11 @@
   }
 
   .info-nav-item {
-    font-size: 3.5vw;
+    font-size: 3vw;
     color: white;
     text-transform: uppercase;
     text-align: left;
-    line-height: 1vw;
+    line-height: 0.5vw;
   }
 
   .info-nav-item h4 {
@@ -55,13 +55,13 @@
   }
 
   .info-text h2 {
-    line-height: 4.5vw;
+    line-height: 4vw;
     text-align: right;
   }
 
   .info-text h2 a {
     color: white;
-    font-size: 6vw;
+    font-size: 5.5vw;
     text-transform: uppercase;
     text-decoration: none;
     background-color: none;
