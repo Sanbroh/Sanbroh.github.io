@@ -182,7 +182,7 @@
     width: 70vw;
   }
 
-  .project-more-buttons h3 {
+  .project-more-buttons a h3 {
     background-color: black;
     color: white;
     padding: 2vh 4vw;
@@ -198,9 +198,16 @@
     transition: 1s;
   }
 
-  .project-more-buttons h3:hover {
+  .project-more-buttons a h3:hover {
     background-color: white;
     color: black;
+
+    transition: 1s;
+  }
+
+  .project-more-buttons a {
+    text-decoration: none;
+    color: white;
 
     transition: 1s;
   }
@@ -473,9 +480,8 @@
     grid-column-gap: 2vw;
   }
 
-  .project-more-buttons h3 {
+  .project-more-buttons a h3 {
     background-color: black;
-    color: white;
     padding: 1.5vh 4vw;
     text-align: center;
     font-size: 1.5vw;
@@ -489,9 +495,16 @@
     transition: 1s;
   }
 
-  .project-more-buttons h3:hover {
+  .project-more-buttons a h3:hover {
     background-color: white;
     color: black;
+
+    transition: 1s;
+  }
+
+  .project-more-buttons a {
+    text-decoration: none;
+    color: white;
 
     transition: 1s;
   }
@@ -766,6 +779,8 @@
 .about-text a {
   font-weight: bold;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 
   transition: 1s;
 }
