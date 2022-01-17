@@ -221,6 +221,130 @@
       margin-top: 0 !important;
   }
 
+  .about-me {
+    margin: 30vh 8vw;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 4vw;
+  }
+
+  .left-box, .right-box {
+    padding: 3vh 1.5vw;
+    opacity: 0.7;
+    background-color: black;
+
+    width: 85vw;
+    height: 70vh;
+
+    transition: 1s;
+  }
+
+  .left-box:hover, .right-box:hover {
+    opacity: 1;
+
+    transition: 1s;
+  }
+
+  .portrait {
+    width: 80vw;
+    height: 70vh;
+    margin: auto;
+    background-image: url("../images/portrait.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    transition: 1s;
+  }
+
+  .portrait:hover {
+    padding: 0;
+
+    transition: 1s;
+  }
+
+  .about-text {
+    color: white;
+    padding: 0.5vh 6vw;
+    cursor: default;
+  }
+
+  .about-text h1 {
+    line-height: 1vw;
+    font-size: 5vh;
+  }
+
+  .about-text h2 {
+    color: #EAE287;
+    font-size: 2.5vh;
+    margin-bottom: 5vh;
+  }
+
+  .about-text hr {
+    border-width: 0.5vh;
+    border-color: white;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  .about-text ul {
+    padding-left: 1vw;
+    margin-top: 1vh;
+  }
+
+  .about-text li {
+    line-height: 4.3vw;
+    font-size: 3vh;
+    padding-top: 3vh;
+  }
+
+  .about-text a {
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+    transition: 1s;
+  }
+
+  .about-text a:hover {
+    color: #FCBF49;
+
+    transition: 1s;
+  }
+
+  .about-buttons {
+    margin-top: 2vh;
+    padding-left: 6vw;
+    vertical-align: middle;
+  }
+
+  .about-button a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 1.5vh 1.5vw;
+    font-size: 2.5vh;
+
+    float: left;
+    margin-right: 0.5vw;
+
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: 1s;
+  }
+
+  .about-button a:hover {
+    background-color: #FCBF49;
+    transition: 1s;
+  }
+
   #navmenu, #to-contact {
     color: #FCBF49;
     transition: 1s;
@@ -509,6 +633,132 @@
     transition: 1s;
   }
 
+  .about-me {
+    margin: 30vh 8vw;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 4vw;
+  }
+
+  .left-box, .right-box {
+    padding: 3vh 1.5vw;
+    opacity: 0.7;
+    background-color: black;
+
+    width: 35vw;
+    height: 85vh;
+
+    transition: 1s;
+  }
+
+  .left-box:hover, .right-box:hover {
+    opacity: 1;
+
+    transition: 1s;
+  }
+
+  .portrait {
+    width: 35vw;
+    height: 85vh;
+    background-image: url("../images/portrait.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    transition: 1s;
+  }
+
+  .portrait:hover {
+    padding: 0;
+    margin: -3vh -1.5vw;
+    width: 38vw;
+    height: 91vh;
+
+    transition: 1s;
+  }
+
+  .about-text {
+    color: white;
+    padding: 3vh 1.5vw;
+    cursor: default;
+  }
+
+  .about-text h1 {
+    line-height: 3vh;
+    font-size: 2.5vw;
+  }
+
+  .about-text h2 {
+    color: #EAE287;
+    font-size: 1.25vw;
+    margin-bottom: 5vh;
+  }
+
+  .about-text hr {
+    border-width: 0.5vh;
+    border-color: white;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  .about-text ul {
+    padding-left: 1vw;
+    margin-top: 1vh;
+  }
+
+  .about-text li {
+    line-height: 5vh;
+    font-size: 1.5vw;
+    padding-top: 3vh;
+  }
+
+  .about-text a {
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+    transition: 1s;
+  }
+
+  .about-text a:hover {
+    color: #FCBF49;
+
+    transition: 1s;
+  }
+
+  .about-buttons {
+    margin-top: 2vh;
+    padding-left: 1.5vw;
+    vertical-align: middle;
+  }
+
+  .about-button a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 1.5vh 1.5vw;
+    font-size: 1.25vw;
+
+    float: left;
+    margin-right: 0.5vw;
+
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: 1s;
+  }
+
+  .about-button a:hover {
+    background-color: #FCBF49;
+    transition: 1s;
+  }
+
   #navmenu, #to-contact {
     color: #FCBF49;
     transition: 1s;
@@ -690,132 +940,6 @@
 }
 
 .project-button a:hover {
-  background-color: #FCBF49;
-  transition: 1s;
-}
-
-.about-me {
-  margin: 30vh 8vw;
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 4vw;
-}
-
-.left-box, .right-box {
-  padding: 3vh 1.5vw;
-  opacity: 0.7;
-  background-color: black;
-
-  width: 35vw;
-  height: 85vh;
-
-  transition: 1s;
-}
-
-.left-box:hover, .right-box:hover {
-  opacity: 1;
-
-  transition: 1s;
-}
-
-.portrait {
-  width: 35vw;
-  height: 85vh;
-  background-image: url("../images/portrait.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  transition: 1s;
-}
-
-.portrait:hover {
-  padding: 0;
-  margin: -3vh -1.5vw;
-  width: 38vw;
-  height: 91vh;
-
-  transition: 1s;
-}
-
-.about-text {
-  color: white;
-  padding: 3vh 1.5vw;
-  cursor: default;
-}
-
-.about-text h1 {
-  line-height: 3vh;
-  font-size: 2.5vw;
-}
-
-.about-text h2 {
-  color: #EAE287;
-  font-size: 1.25vw;
-  margin-bottom: 5vh;
-}
-
-.about-text hr {
-  border-width: 0.5vh;
-  border-color: white;
-  border-style: solid;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-}
-
-.about-text ul {
-  padding-left: 1vw;
-  margin-top: 1vh;
-}
-
-.about-text li {
-  line-height: 5vh;
-  font-size: 1.5vw;
-  padding-top: 3vh;
-}
-
-.about-text a {
-  font-weight: bold;
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-
-  transition: 1s;
-}
-
-.about-text a:hover {
-  color: #FCBF49;
-
-  transition: 1s;
-}
-
-.about-buttons {
-  margin-top: 2vh;
-  padding-left: 1.5vw;
-  vertical-align: middle;
-}
-
-.about-button a {
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  padding: 1.5vh 1.5vw;
-  font-size: 1.25vw;
-
-  float: left;
-  margin-right: 0.5vw;
-
-  font-weight: bolder;
-  text-transform: uppercase;
-  cursor: pointer;
-
-  transition: 1s;
-}
-
-.about-button a:hover {
   background-color: #FCBF49;
   transition: 1s;
 }

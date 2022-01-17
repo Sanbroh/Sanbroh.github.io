@@ -25,10 +25,10 @@
         <h3>Navigation</h3>
         <hr>
         <div class="info-nav-item">
-          <h4 class="lighter">Welcome</h4>
-          <h4 class="lighter">Projects</h4>
-          <h4 class="lighter">About</h4>
-          <h4 class="lighter">Contact Me</h4>
+          <h4 class="lighter" onclick="topFunction()">Welcome</h4>
+          <h4 class="lighter" onclick="goTo(2)">Projects</h4>
+          <h4 class="lighter" onclick="goTo(3)">About</h4>
+          <h4 class="lighter" onclick="goTo(4)">Contact Me</h4>
         </div>
       </div>
       <div class="info-text fade-in-fast">
@@ -60,7 +60,7 @@
         <div class="bg-image bg-image-main"></div>
       </div>
       <div class="intro" id="intro">
-        <h1 class="fade-in-fast">Hello! My name is <a class="emphasis floating" onclick="goToMe()">Kevin Liang.</a></h1>
+        <h1 class="fade-in-fast">Hello! My name is <a class="emphasis floating" onclick="goTo(3)">Kevin Liang.</a></h1>
         <h1>
           <a class="typewrite fade-in-med" data-period="2000" data-type='[ "I love coding.", "I love designing.", "I love learning.", "I love innovating.", "I love everything." ]'>
             <span class="wrap"></span>
@@ -85,7 +85,7 @@
             </div>
             <div class="project-box right">
               <div class="project-bg">
-                <div class="project-image" id="project-2" onclick="getPositionXY(this)"></div>
+                <div class="project-image" id="project-2"></div>
                 <div class="project-text">
                   <h3>Loco <span class="Subtitle">(QTMA 2021)</span></h3>
                   <h4 class="bolder">React Native | Firebase</h4>
@@ -133,7 +133,7 @@
         <div class="right-box">
           <div class="about-text">
             <h1>Hi, I'm Kevin.</h1>
-            <h2>I am open to work!</h2>
+            <h2>I am open for work!</h2>
             <hr>
             <ul class="lighter">
               <li>Currently a 2nd year student at <a href="https://www.queensu.ca/" target="_blank">Queen's University</a> in Kingston, Ontario, Canada</li>

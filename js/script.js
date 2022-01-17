@@ -36,7 +36,7 @@ function scrollFunction() {
   navtext = document.getElementById("navtext");
   // projectsTop = cumulativeOffset(document.getElementById('about-me')).top;
 
-  if (document.body.scrollTop > vh(760) || document.documentElement.scrollTop > vh(760)) {
+  if (document.body.scrollTop > vh(764) || document.documentElement.scrollTop > vh(764)) {
     navtext.innerHTML = "Contacts";
     document.getElementById("bg-title").innerHTML = "Contacts";
   } else if (document.body.scrollTop > vh(630) || document.documentElement.scrollTop > vh(630)) {
@@ -51,13 +51,22 @@ function scrollFunction() {
   }
 }
 
+function goTo(element) {
+  if (element == 1) {
+    topFunction();
+  } else if (element == 2) {
+    window.scrollTo({top: vh(110), behavior: 'smooth'});
+  } else if (element == 3) {
+    window.scrollTo({top: vh(712), behavior: 'smooth'});
+  } else if (element == 4) {
+    window.scrollTo({top: vh(854), behavior: 'smooth'});
+  }
+  toggleMenuOff();
+}
+
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   window.scrollTo({top: 0, behavior: 'smooth'});
-}
-
-function goToMe() {
-  window.scrollTo({top: 4330, behavior: 'smooth'});
 }
 
 function toggleMenuOn() {
