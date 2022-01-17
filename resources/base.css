@@ -1,4 +1,4 @@
-@media only screen and (hover: none) {
+@media only screen and (max-width: 768px) {
   .info-nav {
     position: fixed;
 
@@ -287,7 +287,7 @@
   }
 }
 
-@media only screen and (any-hover: hover) {
+@media only screen and (min-width: 768px) {
   .info-nav {
     position: fixed;
 
@@ -726,6 +726,7 @@
   background-image: url("../images/portrait.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   transition: 1s;
 }
@@ -747,13 +748,13 @@
 
 .about-text h1 {
   line-height: 3vh;
-  font-size: 5vh;
+  font-size: 2.5vw;
 }
 
 .about-text h2 {
   color: #EAE287;
-  font-size: 2.5vh;
-  margin-bottom: 5vh
+  font-size: 1.25vw;
+  margin-bottom: 5vh;
 }
 
 .about-text hr {
@@ -772,7 +773,7 @@
 
 .about-text li {
   line-height: 5vh;
-  font-size: 3vh;
+  font-size: 1.5vw;
   padding-top: 3vh;
 }
 
@@ -802,7 +803,7 @@
   color: black;
   text-decoration: none;
   padding: 1.5vh 1.5vw;
-  font-size: 2.5vh;
+  font-size: 1.25vw;
 
   float: left;
   margin-right: 0.5vw;

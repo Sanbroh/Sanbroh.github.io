@@ -1,4 +1,29 @@
-// When the user scrolls down 50px from the top of the document, show the button
+//https://stackoverflow.com/questions/1480133/how-can-i-get-an-objects-absolute-position-on-the-page-in-javascript
+// var cumulativeOffset = function(element) {
+//     var top = 0, left = 0;
+//     do {
+//         top += element.offsetTop || 0;
+//         left += element.offsetLeft || 0;
+//         element = element.offsetParent;
+//     } while(element);
+//
+//     return {
+//         top: top,
+//         left: left
+//     };
+// };
+
+//https://stackoverflow.com/questions/44109314/javascript-calculate-with-viewport-width-height
+function vh(v) {
+  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  return (v * h) / 100;
+}
+
+function vw(v) {
+  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  return (v * w) / 100;
+}
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -9,11 +34,15 @@ function scrollFunction() {
   }
 
   navtext = document.getElementById("navtext");
+  // projectsTop = cumulativeOffset(document.getElementById('about-me')).top;
 
-  if (document.body.scrollTop > 3860 || document.documentElement.scrollTop > 3860) {
+  if (document.body.scrollTop > vh(760) || document.documentElement.scrollTop > vh(760)) {
+    navtext.innerHTML = "Contacts";
+    document.getElementById("bg-title").innerHTML = "Contacts";
+  } else if (document.body.scrollTop > vh(630) || document.documentElement.scrollTop > vh(630)) {
     navtext.innerHTML = "About";
     document.getElementById("bg-title").innerHTML = "About";
-  } else if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+  } else if (document.body.scrollTop > vh(40) || document.documentElement.scrollTop > vh(40)) {
     navtext.innerHTML = "Projects";
     document.getElementById("bg-title").innerHTML = "Projects";
   } else {
