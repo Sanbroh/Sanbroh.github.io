@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (any-hover: none) {
   .info-nav {
     position: fixed;
 
@@ -297,7 +297,7 @@
   }
 
   .about-text li {
-    line-height: 4.3vw;
+    line-height: 5vw;
     font-size: 3vh;
     padding-top: 3vh;
   }
@@ -411,7 +411,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (any-hover: hover) {
   .info-nav {
     position: fixed;
 
