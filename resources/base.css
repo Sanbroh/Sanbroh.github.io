@@ -1,4 +1,4 @@
-@media only screen and (any-hover: none) {
+@media screen and (any-hover: none) {
   .info-nav {
     position: fixed;
 
@@ -411,7 +411,7 @@
   }
 }
 
-@media only screen and (any-hover: hover) {
+@media screen and (any-hover: hover) {
   .info-nav {
     position: fixed;
 
