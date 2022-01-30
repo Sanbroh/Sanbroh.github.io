@@ -236,7 +236,7 @@
     background-color: black;
 
     width: 85vw;
-    height: 70vh;
+    height: 75vh;
 
     transition: 1s;
   }
@@ -249,7 +249,7 @@
 
   .portrait {
     width: 80vw;
-    height: 70vh;
+    height: 75vh;
     margin: auto;
     background-image: url("../images/portrait.jpg");
     background-repeat: no-repeat;
@@ -945,7 +945,7 @@
 }
 
 .footer {
-  height: 2000px;
+  height: 1000px;
 }
 
 #infoexit {
@@ -966,7 +966,9 @@
 }
 
 #project-1 {
-  background-image: url("https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/363/577/datas/gallery.jpg");
+  background-image: url("../images/scannAR.gif");
+  background-size: 15vw 65vh;
+  background-repeat: no-repeat;
 }
 
 #project-2 {
