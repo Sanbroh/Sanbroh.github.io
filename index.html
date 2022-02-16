@@ -29,7 +29,7 @@
           <h4 class="lighter" onclick="goTo(1)">Welcome</h4>
           <h4 class="lighter" onclick="goTo(2)">Projects</h4>
           <h4 class="lighter" onclick="goTo(3)">About</h4>
-          <h4 class="lighter" onclick="goTo(4)">Contact Me</h4>
+          <h4 class="lighter" onclick="goTo(4)">Contacts</h4>
         </div>
       </div>
       <div class="info-text fade-in-fast">
@@ -69,7 +69,7 @@
         </h1>
       </div>
       <div class="background-text">
-        <p id="bg-title">Projects</p>
+        <p id="bg-title">Welcome</p>
       </div>
       <div class="projects" id="projects">
         <div class="container-wrapper">
@@ -149,12 +149,39 @@
         </div>
       </div>
       <div class="contacts">
-
+        <div class="contacts-container">
+          <div class="contacts-buttons">
+            <a href="https://www.instagram.com/keviniang/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"/></a>
+          </div>
+          <div class="contacts-buttons">
+            <a href="https://www.linkedin.com/in/kevin-liang-32b9791aa/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"/></a>
+          </div>
+          <div class="contacts-buttons">
+            <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png"/></a>
+          </div>
+          <div class="contacts-buttons">
+            <a href="mailto:19kl45@queensu.ca" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1000/1000885.png"/></a>
+          </div>
+        </div>
+        <div class="contacts-form">
+          <h2>Message Me</h2>
+          <h3>Tell me anything you want!</h3>
+          <form action="mailto:19kl45@queensu.ca"
+            method="POST"
+            enctype="multipart/form-data"
+          name="EmailForm">
+            <input type="text" size="19" name="ContactName" placeholder="Full Name">
+            <textarea name="ContactComment" rows="6" cols="20" placeholder="Your Message"></textarea>
+            <input type="submit" value="SUBMIT" class="contacts-form-submit">
+          </form>
+        </div>
       </div>
     </div>
 
     <div class="footer">
-
+      <div class="footer-text">
+        <p>Kevin Liang © 2022</p>
+      </div>
     </div>
 
     <i onclick="topFunction()" id="to-top" class="material-icons lighter">vertical_align_top</i>

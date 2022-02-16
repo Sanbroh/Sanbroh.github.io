@@ -59,7 +59,7 @@ function goTo(element) {
   } else if (element == 3) {
     window.scrollTo({top: vh(712), behavior: 'smooth'});
   } else if (element == 4) {
-    window.scrollTo({top: vh(854), behavior: 'smooth'});
+    window.scrollTo({top: vh(837), behavior: 'smooth'});
   }
   toggleMenuOff();
 }

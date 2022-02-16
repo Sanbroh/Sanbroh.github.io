@@ -944,8 +944,136 @@
   transition: 1s;
 }
 
+.contacts-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw;
+}
+
+.contacts-buttons {
+  display: inline-block;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.7;
+  transition: 1s;
+}
+
+.contacts-buttons:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+.contacts-buttons img {
+  margin-left: 1.35vw;
+  margin-top: 1.35vw;
+  width: 2.4vw;
+  height: 2.4vw;
+  border-radius: 6px;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+
+  transition: 1s;
+}
+
+.contacts-buttons img:hover {
+  filter: none;
+  transition: 1s;
+}
+
+.contacts-form {
+  width: 40vw;
+  margin-top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  background-color: black;
+  opacity: 0.7;
+  transition: 1s;
+}
+
+.contacts-form:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+.contacts-form input, .contacts-form textarea {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.contacts-form h2, .contacts-form h3 {
+  text-align: center;
+  color: white;
+}
+
+.contacts-form h2 {
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.contacts-form h3 {
+  font-weight: lighter;
+  font-size: 16px;
+  margin-top: -8px;
+  margin-bottom: 7.5vh;
+}
+
+.contacts-form input, .contacts-form textarea {
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  color: black;
+  border-color: #FCBF49;
+  border-style: solid;
+  border-width: 4px;
+  width: 20vw;
+  padding: 8px;
+}
+
+.contacts-form input {
+  line-height: 24px;
+}
+
+.contacts-form-submit {
+  margin-top: 7vh !important;
+  width: 10vw !important;
+  font-weight: bolder;
+  border-color: none;
+  border-width: none;
+  border-style: none !important;
+  color: black;
+  background-color: white;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.contacts-form-submit:hover {
+  background-color: #FCBF49;
+  transition: 1s;
+}
+
 .footer {
-  height: 1000px;
+  margin-top: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95.5vw;
+  height: 65px;
+  background-color: black;
+  margin-bottom: 1.6vw;
+}
+
+.footer-text {
+  color: #EAE2B7;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  cursor: default;
+  line-height: 65px;
+  text-align: center;
 }
 
 #infoexit {
