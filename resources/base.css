@@ -1009,6 +1009,7 @@
 
 .contacts-form h2, .contacts-form h3 {
   text-align: center;
+  cursor: default;
   color: white;
 }
 
@@ -1028,11 +1029,18 @@
   margin-top: 3vh;
   margin-bottom: 2vh;
   color: black;
-  border-color: #FCBF49;
+  border-color: white;
   border-style: solid;
   border-width: 4px;
   width: 20vw;
   padding: 8px;
+
+  transition: 1s;
+}
+
+.contacts-form input:hover, .contacts-form textarea:hover {
+  border-color: #FCBF49;
+  transition: 1s;
 }
 
 .contacts-form input {
