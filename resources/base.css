@@ -223,6 +223,7 @@
 
   .about-me {
     margin: 30vh 8vw;
+    margin-bottom: 0;
     display: grid;
     grid-auto-flow: row;
     justify-content: center;
@@ -343,6 +344,25 @@
   .about-button a:hover {
     background-color: #FCBF49;
     transition: 1s;
+  }
+
+  .skills-badge {
+    width: 8vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 2vh;
+    cursor: pointer;
+
+    transition: 0.5s;
+  }
+
+  .skills-badge:hover {
+    margin-top: -0.8vw;
+    width: 8.8vw;
+    margin-left: 0.1vw;
+    margin-right: 0.1vw;
+
+    transition: 0.5s;
   }
 
   #navmenu, #to-contact {
@@ -635,6 +655,7 @@
 
   .about-me {
     margin: 30vh 8vw;
+    margin-bottom: 0;
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
@@ -757,6 +778,25 @@
   .about-button a:hover {
     background-color: #FCBF49;
     transition: 1s;
+  }
+
+  .skills-badge {
+    width: 4vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 2vh;
+    cursor: pointer;
+
+    transition: 0.5s;
+  }
+
+  .skills-badge:hover {
+    margin-top: -0.4vw;
+    width: 4.4vw;
+    margin-left: 0.3vw;
+    margin-right: 0.3vw;
+
+    transition: 0.5s;
   }
 
   #navmenu, #to-contact {
@@ -944,13 +984,41 @@
   transition: 1s;
 }
 
+.skills {
+  display: block;
+  background-color: black;
+  opacity: 0.7;
+
+  margin: 8vh 8vw;
+  padding: 4vh 8vw;
+  padding-top: 3vh;
+  margin-bottom: 30vh;
+  text-align: center;
+
+  transition: 0.5s;
+}
+
+.skills:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.skills-title {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 4vh;
+}
+
 .contacts-container {
   margin-left: auto;
   margin-right: auto;
-  width: 30vw;
+  text-align: center;
 }
 
 .contacts-buttons {
+  display: inline;
+  text-align: left;
   display: inline-block;
   margin-left: 1vw;
   margin-right: 1vw;
@@ -993,12 +1061,12 @@
   padding-bottom: 6vh;
   background-color: black;
   opacity: 0.7;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .contacts-form:hover {
   opacity: 1;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .contacts-form input, .contacts-form textarea {
@@ -1103,12 +1171,12 @@
 
 #project-1 {
   background-image: url("../images/scannAR.gif");
-  background-size: 200px 410px;
+  background-size: auto 65vh;
   background-repeat: no-repeat;
 }
 
 #project-2 {
-  background-image: url("../images/qtma-logo.jpg");
+  background-image: url("../images/qtma-logo.png");
 }
 
 #project-3 {

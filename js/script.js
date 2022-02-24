@@ -36,10 +36,10 @@ function scrollFunction() {
   navtext = document.getElementById("navtext");
   // projectsTop = cumulativeOffset(document.getElementById('about-me')).top;
 
-  if (document.body.scrollTop > vh(764) || document.documentElement.scrollTop > vh(764)) {
+  if (document.body.scrollTop > vh(830) || document.documentElement.scrollTop > vh(830)) {
     navtext.innerHTML = "Contacts";
     document.getElementById("bg-title").innerHTML = "Contacts";
-  } else if (document.body.scrollTop > vh(630) || document.documentElement.scrollTop > vh(630)) {
+  } else if (document.body.scrollTop > vh(640) || document.documentElement.scrollTop > vh(640)) {
     navtext.innerHTML = "About";
     document.getElementById("bg-title").innerHTML = "About";
   } else if (document.body.scrollTop > vh(40) || document.documentElement.scrollTop > vh(40)) {
@@ -59,7 +59,7 @@ function goTo(element) {
   } else if (element == 3) {
     window.scrollTo({top: vh(712), behavior: 'smooth'});
   } else if (element == 4) {
-    window.scrollTo({top: vh(837), behavior: 'smooth'});
+    window.scrollTo({top: vh(895), behavior: 'smooth'});
   }
   toggleMenuOff();
 }
