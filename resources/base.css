@@ -1103,6 +1103,7 @@
   border-width: 4px;
   width: 20vw;
   padding: 8px;
+  resize: none;
 
   transition: 1s;
 }
