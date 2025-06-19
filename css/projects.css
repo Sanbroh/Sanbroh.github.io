@@ -1,0 +1,13 @@
+.card-img-top {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: lightgray;
+}
+
+.card-body {
+    padding: 0.75rem;
+}

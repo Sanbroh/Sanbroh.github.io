@@ -1,0 +1,15 @@
+.highlight-img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.0rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-body {
+    padding: 0.5rem;
+}

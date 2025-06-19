@@ -1,228 +1,147 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Kevin Liang</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="resources/style.css" type="text/css" rel="stylesheet" />
-<link href="resources/base.css" type="text/css" rel="stylesheet" />
-<link href="resources/animation.css" type="text/css" rel="stylesheet" />
-<!-- <script src="path/to/dist/feather.js"></script> -->
-<script src="js/script.js"></script>
-<script src="js/animation.js"></script>
+  <meta charset="utf-8">
+  <title>Kevin Liang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CDN for Bootstrap 5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-
-    <!-- Toggle Menu -->
-
-    <div class="infomenu" id="infomenu">
-      <div class="image-wrapper">
-        <div class="info-background info-fade"></div>
-      </div>
-      <div class="info-nav fade-in-fast">
-        <h3>Navigation</h3>
-        <hr>
-        <div class="info-nav-item">
-          <h4 class="lighter" onclick="goTo(1)">Welcome</h4>
-          <h4 class="lighter" onclick="goTo(2)">Projects</h4>
-          <h4 class="lighter" onclick="goTo(3)">About</h4>
-          <h4 class="lighter" onclick="goTo(4)">Contacts</h4>
-        </div>
-      </div>
-      <div class="info-text fade-in-fast">
-        <h2><a href="https://www.linkedin.com/in/keviniang/" target="_blank">LinkedIn</a></h2>
-        <h2><a href="https://www.instagram.com/keviniang/" target="_blank">Instagram</a></h2>
-        <h2><a href="https://www.facebook.com/" target="_blank">Facebook</a></h2>
-        <h2><a href="https://devpost.com/Sanbroh" target="_blank">Devpost</a></h2>
-        <h2><a href="https://github.com/Sanbroh" target="_blank">GitHub</a></h2>
-      </div>
-      <div class="info-exit">
-        <i id="infoexit" class="material-icons lighter" onclick="toggleMenuOff()">close</i>
-      </div>
-    </div>
-
-    <!-- Header -->
-
-    <header>
-      <div class="topnav fixed" id="topnav">
-        <i id="navmenu" class="material-icons lighter" onclick="toggleMenuOn()">menu</i>
-        <h1 id="navtext" class="lighter">Welcome</h1>
-        <i id="to-contact" class="material-icons lighter" onclick="goTo(4)">mail_outline</i>
-      </div>
-    </header>
-
-    <!-- Front Page -->
-
-    <div class="main">
-      <div class="image-wrapper">
-        <div class="bg-image bg-image-main"></div>
-      </div>
-      <div class="intro" id="intro">
-        <h1 class="fade-in-fast">Hello! My name is <a class="emphasis floating" onclick="goTo(3)">Kevin Liang.</a></h1>
-        <h1>
-          <a class="typewrite fade-in-med" data-period="2000" data-type='[ "I love coding.", "I love designing.", "I love learning.", "I love innovating.", "I love everything." ]'>
-            <span class="wrap"></span>
-          </a>
-        </h1>
-      </div>
-      <div class="background-text">
-        <p id="bg-title">Welcome</p>
-      </div>
-      <div class="projects" id="projects">
-        <div class="container-wrapper">
-            <div class="project-box left">
-              <div class="project-bg">
-                <div class="project-image" id="project-1"></div>
-                <div class="project-text">
-                  <h3>scannAR <span class="Subtitle">(QHacks 2022)</span></h3>
-                  <h4 class="bolder">Unity | C#</h4>
-                  <p>scannAR is a mobile application that brings URL to IRL through AR technologies, it uses the Unity AR foundation.</p>
-                  <div class="project-button"><a href="https://devpost.com/software/scannar" target="_blank">Visit Project »</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="project-box right">
-              <div class="project-bg">
-                <div class="project-image" id="project-2"></div>
-                <div class="project-text">
-                  <h3>Loco <span class="Subtitle">(QTMA 2021)</span></h3>
-                  <h4 class="bolder">React Native | Firebase</h4>
-                  <p>Loco is a mobile application that makes tourism easy by giving new entertainment, food, and other unique recommendations to users.</p>
-                  <div class="project-button"><a href="https://www.instagram.com/getloco.app/" target="_blank">Visit Project »</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="project-box left">
-              <div class="project-bg">
-                <div class="project-image" id="project-3"></div>
-                <div class="project-text">
-                  <h3>ReLeaf <span class="Subtitle">(CalgaryHacks 2022)</span></h3>
-                  <h4 class="bolder">Python | Flask | HTML | CSS | JavaScript | Bootstrap</h4>
-                  <p>A web application powered by machine learning to help you reduce stress and be ready for anything.</p>
-                  <div class="project-button"><a href="https://devpost.com/software/releaf-pz03ri" target="_blank">Visit Project »</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="project-box right">
-              <div class="project-bg">
-                <div class="project-image" id="project-4"></div>
-                <div class="project-text">
-                  <h3>Design Project <span class="Subtitle">(APSC200)</span></h3>
-                  <h4 class="bolder">MATLAB</h4>
-                  <p>Optimization of Uber Eats services in Kingston, Ontario. Uses Lloyd's Algorithm to allocate drivers.</p>
-                  <div class="project-button"><a href="https://github.com/Sanbroh/uberEatsOptimization" target="_blank">Visit Project »</a></div>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="project-gallery">
-              <h2>Project Gallery</h2>
-            </div> -->
-            <div class="project-more">
-              <h2>More Projects</h2>
-              <div class="project-more-buttons">
-                <a href="https://github.com/Sanbroh" target="_blank"><h3>GitHub</h3></a>
-                <a href="https://devpost.com/Sanbroh" target="_blank"><h3>Devpost</h3></a>
-                <a><h3>ArtStation</h3></a>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="about-me" id="about-me">
-        <div class="left-box">
-          <div class="portrait"></div>
-        </div>
-        <div class="right-box">
-          <div class="about-text">
-            <h1>Hi, I'm Kevin.</h1>
-            <h2>I am looking for 2023 internships!</h2>
-            <hr>
-            <ul class="lighter">
-              <li>Currently a 3rd year student at <a href="https://www.queensu.ca/" target="_blank">Queen's University</a> in Kingston, Ontario, Canada</li>
-              <li>Majoring in <a href="https://www.queensu.ca/mathstat/undergraduate/prospective-undergraduate/mthe" target="_blank">Mathematics and Engineering</a> with an option in Systems and Robotics</li>
-              <li>Have strong interests in <a>Software Development</a>, <a>Computer Hardware Engineering</a> and <a>Data Science</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Kevin Liang</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="assets/Kevin_Liang_CV.pdf" target="_blank">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Research
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item disabled" href="#">Publications</a></li>
+              <li><a class="dropdown-item disabled" href="#">Talks</a></li>
             </ul>
-          </div>
-          <div class="about-buttons">
-            <div class="about-button"><a onclick="goTo(4)">Contact Me</a></div>
-            <div class="about-button"><a href="./files/Kevin_Liang_CV.pdf" target="_blank">Resumé ▼</a></div>
-          </div>
-        </div>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" disabled>
+          <button class="btn btn-outline-success" type="submit" disabled>Search</button>
+        </form>
       </div>
-      <div class="skills">
-        <h1 class="skills-title">My Toolbox</h1>
-        <img title="Python" class="skills-badge" src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" />
-        <img title="MATLAB" class="skills-badge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/800px-Matlab_Logo.png" />
-        <img title="C++" class="skills-badge" src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" />
-        <img title="C#" class="skills-badge" src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" />
-        <img title="C" class="skills-badge" src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" />
-        <img title="Java" class="skills-badge" src="https://dev.java/assets/images/java-logo-vert-blk.png" />
-        <img title="HTML" class="skills-badge" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" />
-        <img title="CSS" class="skills-badge" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" />
-        <img title="JavaScript" class="skills-badge" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" />
-        <img title="VHDL" class="skills-badge" src="https://is2-ssl.mzstatic.com/image/thumb/Purple124/v4/41/e5/c6/41e5c6ba-2868-669c-fc06-8a7b004751fe/AppIcon-0-0-1x_U007emarketing-0-0-0-4-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/400x400.png" />
-        <img title="Assembly (Nios II)" class="skills-badge" src="https://gitconnected.com/public/images/tutorials/assembly-language" />
-        <img title="Microsoft Office" class="skills-badge" src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/1296i7768C2951837E376/image-size/large?v=v2&px=999" />
-        <img title="Unity" class="skills-badge" src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Unity_Hub_Logo.png" />
-        <img title="Twine" class="skills-badge" src="https://www.saashub.com/images/app/service_logos/11/56373148656d/large.png?1530297626" />
-        <img title="Git" class="skills-badge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png" />
-        <img title="Flask" class="skills-badge" src="https://www.kindpng.com/picc/m/188-1882559_python-flask-hd-png-download.png" />
-        <img title="MongoDB" class="skills-badge" src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-mongodb/events/mon.png" />
-        <img title="Express.js" class="skills-badge" src="https://hackr.io/tutorials/learn-express-js/logo/logo-express-js?ver=1557508379" />
-        <img title="React.js" class="skills-badge" src="https://ionicframework.com/docs/icons/logo-react-icon.png" />
-        <img title="React Native" class="skills-badge" src="https://www.devscale.bg/uploads/optimized/f98e25c292e0f6b917e2d5c240045c70.png" />
-        <img title="Node.js" class="skills-badge" src="https://www.mindrops.com/images/nodejs-image.png" />
-        <img title="Expo" class="skills-badge" src="https://play-lh.googleusercontent.com/algsmuhitlyCU_Yy3IU7-7KYIhCBwx5UJG4Bln-hygBjjlUVCiGo1y8W5JNqYm9WW3s" />
-        <img title="Figma" class="skills-badge" src="https://i.pinimg.com/originals/66/8c/cc/668cccb3f734f342e07c0185e6d9a975.png" />
-        <img title="Adobe Creative Cloud" class="skills-badge" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Creative_Cloud.svg" />
-        <img title="SOLIDWORKS CAD" class="skills-badge" src="https://freepikpsd.com/file/2019/10/logo-solidworks-png-5-Transparent-Images-Free.png" />
-        <img title="Autodesk AutoCAD" class="skills-badge" src="https://logosvector.net/wp-content/uploads/2015/09/autocad-logo.png" />
-        <img title="Arduino" class="skills-badge" src="https://i.pinimg.com/originals/3e/87/cf/3e87cf4b3a6a124a4e1666e498e598f3.png" />
-        <img title="Windows OS" class="skills-badge" src="https://www.freeiconspng.com/thumbs/windows-icon-png/cute-ball-windows-icon-png-16.png" />
-        <img title="Linux (Ubuntu)" class="skills-badge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png" />
-        <img title="Android" class="skills-badge" src="https://seeklogo.com/images/A/android-icon-logo-DB06FA8B39-seeklogo.com.png" />
-      </div>
-      <div class="contacts">
-        <div class="contacts-container">
-          <div class="contacts-buttons">
-            <a href="https://www.instagram.com/keviniang/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"/></a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container text-center mt-4 main">
+    <div class="row">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="images/kevin.jpg" alt="Kevin Liang" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+            <h2>Kevin Liang</h2>
+            <p>MASc Student</p>
+            <p class="text-muted">Edward S. Rogers Sr. Department of <br /> Electrical and Computer Engineering, <br /> University of Toronto</p>
+            <div class="d-flex justify-content-center">
+              <a href="https://github.com/sanbroh" class="btn btn-outline-dark btn-sm m-1" target="_blank">GitHub</a>
+              <a href="https://linkedin.com/in/keviniang" class="btn btn-outline-primary btn-sm m-1" target="_blank">LinkedIn</a>
+            </div>
           </div>
-          <div class="contacts-buttons">
-            <a href="https://www.linkedin.com/in/keviniang/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"/></a>
+    
+          <div class="col-md-8 text-start">
+            <h3>About Me</h3>
+            <p>
+              I am an incoming MASc student in the Systems Control group at the University of Toronto, supervised by <a href="https://www.control.toronto.edu/~pavel/" target="_blank">Prof. Lacra Pavel</a>.
+            </p>
+            <p>
+              I graduated from Queen's University, Kingston in 2025 with a BASc in Mathematics and Engineering, with an option in Systems and Robotics (M11).
+              My research interest is in the area of multi-agent control and reinforcement learning, where heavy mathematics help solve real world problems.
+              Before graduate school, I interned at RBC Capital Markets as an algo product manager for its electronic trading platform and assisted in nuclear materials research
+              at RMTL (Queen's). Outside of work and school, I am focused on giving back through mentorship and leadership as part of my commitment to help others around me.
+              You can check out some of my past work and organizations <a href="./projects.html">here</a>.
+            </p>
+            <p>
+              In my spare time, I enjoy reading books, playing board games, and searching for the best truffle fries there is!
+            </p>
+            <h3>Highlights</h3>
+            <div class="row align-items-stretch mt-3">
+              <!-- Linked Highlight Cards -->
+              <div class="col-md-4 mb-3">
+                <a href="project.html?project=vib_thesis" class="text-decoration-none text-reset">
+                  <div class="card h-100">
+                    <img src="images/undergradthesis.jpg" class="card-img-top highlight-img" alt="Undergraduate Thesis">
+                    <div class="card-body d-flex flex-column justify-content-end text-center">
+                      <h5 class="card-title">Undergraduate Thesis on VIB</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 mb-3">
+                <a href="project.html?project=qaero" class="text-decoration-none text-reset">
+                  <div class="card h-100">
+                    <img src="images/qadt2025.jpg" class="card-img-top highlight-img" alt="Queen's Aerospace 2025">
+                    <div class="card-body d-flex flex-column justify-content-end text-center">
+                      <h5 class="card-title">Queen's Aerospace 2025</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 mb-3">
+                <a href="project.html?project=qhyperloop" class="text-decoration-none text-reset">
+                  <div class="card h-100">
+                    <img src="images/qhdt2023.jpg" class="card-img-top highlight-img" alt="Queen's Hyperloop 2023">
+                    <div class="card-body d-flex flex-column justify-content-end text-center">
+                      <h5 class="card-title">Queen's Hyperloop 2023</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="contacts-buttons">
-            <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png"/></a>
-          </div>
-          <div class="contacts-buttons">
-            <a href="mailto:19kl45@queensu.ca" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1000/1000885.png"/></a>
-          </div>
-        </div>
-        <div class="contacts-form">
-          <h2>Message Me</h2>
-          <h3>Tell me anything you want!</h3>
-          <form action="mailto:19kl45@queensu.ca"
-            method="POST"
-            enctype="multipart/form-data"
-          name="EmailForm">
-            <input type="text" size="19" name="ContactName" placeholder="Full Name">
-            <textarea name="ContactComment" rows="6" cols="20" placeholder="Your Message"></textarea>
-            <input type="submit" value="SEND" class="contacts-form-submit">
-          </form>
         </div>
       </div>
     </div>
-
-    <div class="footer">
-      <div class="footer-text">
-        <p>Kevin Liang © 2022</p>
-      </div>
-    </div>
-
-    <i onclick="topFunction()" id="to-top" class="material-icons lighter">vertical_align_top</i>
-
   </div>
+
+  <!-- Footer -->
+  <footer class="bg-light py-3 fixed-bottom">
+    <div class="container text-center">
+      <small class="text-muted">&copy; 2025 Kevin Liang. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/animation.js"></script>
 </body>
 
 </html>
